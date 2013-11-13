@@ -133,7 +133,5 @@ def create_wikipage(name):
         temp = format_template(name)
         page.put(temp, 'Autogenerating hook documentation!')
 
-create_wikipage(sys.argv[1])
-
-
-
+if __name__ == '__main__':
+    create_wikipage(sys.argv[1])
