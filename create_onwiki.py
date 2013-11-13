@@ -38,7 +38,7 @@ def parse():
     inhook = False
     cur_hook = {'vars': []}
     for line in text.splitlines():
-        line.strip()
+        line = line.strip()
 
         if inhook:
             if line.startswith(('&', '$')):
